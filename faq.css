@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.clearFix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+
+#section .text .contents {
+    display: none;
+}
+
+#section .text .ve {
+    display: block;
+}
+
+#section .text .menu .cl>a {
+    /* text-decoration: underline; */
+    color: red;
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+
+}
+
+
+#section .text {
+    width: 1200px;
+    /* height: 700px; */
+    margin: 0 auto;
+}
+
+#section .text>h1 {
+    font-size: 50pt;
+    margin-top: 10px;
+    padding-bottom: 80px;
+}
+
+#section .text>ul {
+    width: 500px;
+    height: 60px;
+
+    margin-bottom: 50px;
+}
+
+#section .text .menu>li {
+    font-size: 16pt;
+    font-weight: bold;
+    float: left;
+    padding-right: 40px;
+    line-height: 60px;
+}
+
+
+/* ---------------contents--------------------------- */
+#section .text .contents ul li {
+    font-size: 13pt;
+    padding: 8px 0;
+}
+
+#section .text .contents h2 {
+    font-size: 28pt;
+    margin-bottom: 50px;
+}
+/* ---------------online------------------------------ */
+#section .text .contents .online {
+    height: 110px;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 30px;
+}
+
+#section .text .contents ul.online li>h4 {
+    font-size: 14pt;
+    color: black
+}
+
+
+#section .text .contents ul.online>li {
+    font-size: 12pt;
+    padding: 3px 0;
+    color: rgb(41, 41, 41);
+}
+
+
+#section .text .contents span {
+    display: inline-block;
+    font-size: 13pt;
+
+    font-weight: bold;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+#section .text .contents span>span {
+    color: black;
+}
+
+/* ----------------que---------------------------- */
+
+#section .text .contents .que {
+    border-top: 1px solid rgba(128, 128, 128, 0.548);
+}
+
+#section .text .contents .que li {
+    height: 50px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+    overflow: hidden;
+
+    transition: all 0.3s;
+    padding: 20px;
+
+    color: rgb(46, 46, 46);
+}
+
+#section .text .contents .que li h3 {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18pt;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#section .text .contents .que li p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+#section .text .contents .que li.an {
+    background-color: rgba(128, 128, 128, 0.267);
+    height: 120px;
+}
+
+#section .text .contents .que li.an h3 {
+    color: black;
+}

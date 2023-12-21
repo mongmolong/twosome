@@ -1,0 +1,1133 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+#header {
+    position: relative;
+    z-index: 1;
+}
+
+#header .h_list {
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    /* background-color: antiquewhite; */
+}
+
+
+#header .h_list::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#header .h_list img:nth-child(1) {
+    float: left;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+
+
+
+
+#header .h_list>ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header .h_list>ul {
+    width: 1400px;
+    float: left;
+    line-height: 40px;
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -620px;
+}
+
+#header .h_list>ul>li {
+    float: left;
+    /* padding: 0 10px; */
+    font-size: 13pt;
+    font-weight: bold;
+    text-align: center;
+    width:210px;
+}
+
+#header .h_list ul>li .sub:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header .h_list ul>li .sub {
+    line-height: 30px;
+    text-align: center;
+    font-weight: lighter;
+    display: none;
+}
+
+#header .h_list>ul>li>a:hover {
+    background-color: rgb(51, 25, 0);
+    display: block;
+    color: white;
+
+}
+
+#header .h_list>ul>li>.sub>li:hover {
+
+    background-color: rgba(228, 228, 228, 0.514);
+    color: black;
+}
+
+
+
+
+
+
+#header .h_list .list_btn {
+    width: 150px;
+    height: 40px;
+    float: right;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+#header .h_list .list_btn span {
+    width: 80px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 10pt;
+    color: white;
+    margin-top: 5px;
+    margin-right: 90px;
+    float: left;
+}
+
+
+#header .h_list .list_btn>img {
+    float: right;
+    margin-top: -28px;
+
+}
+
+
+
+/* =========banner============== */
+
+
+#section .fix_btn {
+    width: 200px;
+    height: 150px;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    /* position: absolute; */
+    z-index: 2;
+
+
+}
+
+#section .fix_btn p>img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+#section .fix_btn p {
+    width: 200px;
+    height: 60px;
+    background-color: rgb(235, 64, 64);
+    border-radius: 50px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 13pt;
+    font-weight: bold;
+
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+
+}
+
+#section .fix_btn span {
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    display: inline-block;
+    text-align: center;
+    margin-left: 70px;
+    color: white;
+    font-size: 20pt;
+    line-height: 60px;
+
+}
+
+
+
+#section .right::after {
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+#section .right {
+    width: 20px;
+    height: 200px;
+    /* background-color: rgb(222, 186, 255); */
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    margin-top: -100px;
+    right: 80px;
+    font-size: 15pt;
+    text-align: center;
+}
+
+#section .right .r_bottom {
+    height: 100px;
+    width: 2px;
+    background-color: black;
+    /* display: inline-block; */
+    margin: 15px 10px;
+
+}
+
+#section .right .r_bottom span {
+    height: 80px;
+    width: 2px;
+    background-color: rgb(131, 129, 129);
+    display: inline-block;
+    margin-top: 20px;
+
+}
+
+
+#section .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+
+#section .banner p {
+    width: 240px;
+    height: 60px;
+    background-color: rgb(87, 86, 86);
+    border-radius: 30px;
+    color: white;
+    position: absolute;
+    /* bottom: 25px; */
+    left: 50%;
+    /* margin: 0 auto; */
+    bottom: 20px;
+    margin-left: -120px;
+
+
+}
+
+#section .banner p::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#section .banner p span {
+    display: inline-block;
+    float: left;
+    padding: 0 29px;
+    line-height: 60px;
+    font-size: 15pt;
+}
+
+
+
+
+/* ========story menu====================== */
+
+#section .story {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    /* background-color: bisque; */
+    position: relative;
+    overflow: hidden;
+}
+
+#section .story .menu {
+    width: 650px;
+    height: 500px;
+    padding-top: 180px;
+    margin-left: 330px;
+    position: absolute;
+    z-index: 2;
+    /* background-color: blue; */
+}
+
+
+#section .story .menu h1::after {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+
+    content: "";
+    display: block;
+    position: absolute;
+    top: 260px;
+    right: 0;
+
+
+}
+
+
+
+
+#section .story .menu h1 {
+    font-size: 70pt;
+    font-weight: bold;
+    /* background-color: aquamarine; */
+}
+
+#section .story .menu p {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 13pt;
+    font-weight: bold;
+
+}
+
+
+#section .story .menu h2 {
+    font-size: 24pt;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: gray;
+}
+
+#section .story .menu .line {
+    color: black;
+    text-decoration: underline;
+}
+
+/* =============================story photo======================== */
+
+#section .story ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#section .story ul {
+    width: 1080px;
+    height: 500px;
+    /* margin-left: -260px; */
+    /* margin-top: 250px; */
+    position: absolute;
+    right: -110px;
+    bottom: 200px;
+}
+
+
+
+#section .story ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+#section .story ul li:nth-child(1) {
+    background-image: url("images/01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    margin-left: -100px;
+    z-index: 1;
+
+}
+
+
+#section .story ul li:nth-child(1)>div {
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -25px;
+    left: 50px;
+    margin-top: 400px;
+}
+
+#section .story ul li:nth-child(1) div span:nth-child(2) {
+    padding: 0 90px;
+}
+
+
+#section .story ul li:nth-child(2)::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#section .story ul li:nth-child(2) {
+    width: 660px;
+    height: 200px;
+    /* background-color: aquamarine;     */
+    margin-top: 300px;
+
+}
+
+#section .story ul li:nth-child(2) span {
+    float: left;
+    margin-right: 20px;
+    /* margin-top: 300px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+}
+
+#section .story ul li:nth-child(2) span:nth-child(1) {
+    background-image: url("images/02.jpg");
+}
+
+
+#section .story ul li:nth-child(2) span:nth-child(2) {
+    background-image: url("images/03.jpg");
+}
+
+#section .story ul li:nth-child(2) span:nth-child(3) {
+    background-image: url("images/04.jpg");
+}
+
+
+/* ----------------a list----------------------- */
+
+#section .a_list {
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/main02.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#section .a_list .text {
+    /* background-color: rgb(208, 159, 255); */
+    width: 550px;
+    height: 430px;
+    padding-top: 250px;
+    margin-left: 350px;
+    position: relative;
+
+}
+
+#section .a_list .text h1 {
+    font-size: 70pt;
+    font-weight: bold;
+}
+
+#section .a_list .text h1::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    right: 45px;
+    top: 330px;
+    /* top:310x; */
+}
+
+#section .a_list .text h2 {
+    font-size: 22pt;
+    font-weight: bold;
+    padding: 40px 0;
+
+}
+
+#section .a_list .text h3 {
+    font-size: 18pt;
+    padding-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+
+#section .a_list .text p {
+    font-size: 13pt;
+
+}
+
+
+
+
+
+
+
+/* ---------brand---------------------------------------------------- */
+
+
+#section .brand {
+    width: 100%;
+    height: 100vh;
+}
+
+
+#section .brand .brand_list {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-left: 330px;
+
+}
+
+#section .brand h1::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+
+}
+
+#section .brand  h1 {
+    width: 460px;
+    height: 250px;
+    font-size: 70pt;
+    font-weight: bold;
+    padding-top: 150px;
+    position: relative;
+    z-index: 1;
+    /* background-color: blueviolet; */
+}
+
+
+#section .brand .brand_list ul {
+    width:2400px;
+    height: 650px;
+    margin-top: -180px;
+    margin-left: 90px;
+
+}
+
+#section .brand .brand_list ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+#section .brand .brand_list .b_photo {
+    /* position: relative;
+    z-index: 0; */
+    float: left;
+    margin-left: 50px;
+    position: relative;
+}
+
+#section .brand .b_photo span:nth-child(1)::before {
+    display: block;
+    content: "";
+
+    width: 40px;
+    height: 1px;
+    background-color: black;
+
+    left: -50px;
+    top: 12px;
+    position: absolute;
+
+}
+
+#section .brand .b_photo span:nth-child(1) {
+    display: inline-block;
+    width: 130px;
+    height: 20px;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 420px;
+    left: -90px;
+    /* background-color: rgb(17, 105, 76); */
+
+}
+
+#section .brand .b_photo span:nth-child(2) {
+    background-image: url("images/s01.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 550px;
+    display: inline-block;
+    /* margin-left: 190px; */
+}
+
+
+
+
+#section .brand .wondu {
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 230px 0px 0px 100px;
+}
+
+
+#section .brand .wondu h2 {
+    padding: 20px 0;
+    text-decoration: underline;
+    font-size: 20pt;
+}
+
+#section .brand .wondu h2 i {
+    margin-left: 15px;
+}
+
+#section .brand .wondu p {
+    width: 300px;
+    font-size: 13pt;
+}
+
+#section .brand .wondu .b_btn {
+    width: 300px;
+    height: 60px;
+    background-color: black;
+    margin-top: 50px;
+    color: white;
+    font-size: 15pt;
+    display: flex;
+    justify-content: space-between;
+    line-height: 60px;
+}
+
+#section .brand .wondu .b_btn span {
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+
+
+
+#section .brand .brand_list .b_photo2 {
+    width: 550px;
+    height: 550px;
+    margin-left: 410px;
+    float: left;
+}
+
+#section .brand .brand_list>ul>.b_photo2 .aaa {
+    background-image: url("images/s02.jpg");
+    background-position: center;
+    background-image: cover;
+    background-repeat: no-repeat;
+
+    width: 550px;
+    height: 550px;
+    display: inline-block;
+}
+
+#section .brand .brand_list ul .b_photo2 span:nth-child(1)::before {
+    display: block;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: black;
+
+    /* position: absolute;
+    bottom: 10px;
+    left: -50px; */
+}
+
+#section .brand .b_photo2 span:nth-child(1) {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    transform: rotate(270deg);
+    /* position: absolute;
+    bottom: 90px;
+    left: -70px; */
+}
+
+
+
+
+
+/* ==----------franchise========================== */
+
+#section .franchise {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+#section .franchise h1 {
+    font-size: 70pt;
+    font-weight: bold;
+    position: relative;
+    width: 570px;
+    padding-top: 270px;
+    margin: 0 auto;
+}
+
+#section .franchise h1::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    right: 1px;
+    bottom: 22px;
+
+}
+
+#section .franchise h3 {
+    margin: 40px 0;
+    font-size: 16pt;
+
+}
+
+#section .franchise p {
+    font-size: 13pt;
+}
+
+#section .franchise ul {
+    width: 550px;
+    height: 60px;
+    margin: 40px auto;
+
+
+}
+
+#section .franchise ul::after {
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+#section .franchise ul li:nth-child(1) {
+    margin-left: 35px;
+}
+
+
+
+#section .franchise ul li {
+    float: left;
+    width: 220px;
+    height: 60px;
+    font-size: 15pt;
+    font-weight: bold;
+    line-height: 60px;
+    border: 2px solid black;
+    margin: 0 20px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+#section .franchise ul li:hover a:before {
+    transform: translateX(0%);
+
+}
+
+#section .franchise ul li:hover a {
+    color: white;
+}
+
+#section .franchise ul li a {
+    display: block;
+    position: relative;
+    z-index: 12;
+}
+
+#section .franchise ul li a::before {
+    content: "";
+    display: block;
+
+    width: 220px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translateX(-101%);
+    transition: all 0.2s;
+
+}
+
+/* -------------news------------------------ */
+
+#section .news {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+
+#section .news::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+#section .news .n_left {
+    width: 600px;
+    height: 600px;
+    margin-left: 300px;
+    margin-top: 110px;
+    float: left;
+
+}
+
+#section .news .n_left h1 {
+    width: 560px;
+    height: 230px;
+    font-size: 70pt;
+    font-weight: bold;
+    position: relative;
+    line-height: 90px;
+}
+
+#section .news .n_left h1::after {
+    content: "";
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    right: 110px;
+    bottom: 60px;
+
+}
+
+#section .news .n_left>p {
+    font-size: 15pt;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+}
+
+#section .news .n_left>img {
+    width: 300px;
+    height: 300px;
+}
+
+/* ---n_right----------- */
+
+#section .news .n_right {
+    height: 600px;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 180px;
+    float: left;
+
+
+}
+
+
+
+#section .news .n_right li {
+    width: 550px;
+    height: 130px;
+    border-bottom: 1px solid gray;
+    padding: 30px 15px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+
+}
+
+
+
+#section .news .n_right li:hover a::before {
+    transform: translateX(0%);
+}
+
+#section .news .n_right li:hover a {
+    color: white;
+}
+
+#section .news .n_right li:hover h3 {
+    text-decoration: underline;
+}
+
+
+#section .news .n_right li a {
+    display: block;
+
+}
+
+#section .news .n_right li a::before {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 130px;
+    padding: 30px 0;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-101%);
+    transition: all 0.2s;
+    z-index: -1;
+
+}
+
+
+
+
+
+#section .news .n_right li span {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#section .news .n_right li span:nth-child(1) {
+    font-size: 17px;
+    color: rgb(247, 148, 165);
+    margin-bottom: 20px;
+
+
+}
+
+
+
+#section .news .n_right li h3 {
+    font-size: 18pt;
+    padding-bottom: 16px;
+}
+
+
+
+/* --------------------footer------------------------- */
+/* -----------------f01----------------------- */
+
+#footer .ff::after {
+    content: "";
+    clear: both;
+    display: block;
+
+}
+
+#footer .ff {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(65, 64, 64);
+}
+
+#footer .ff .f01 {
+    width: 1350px;
+    height: 240px;
+    color: white;
+    margin: 0 auto;
+    padding-top: 60px;
+    border-bottom: 1px solid white;
+
+
+}
+
+#footer .ff .f01 .l_foot {
+    width: 850px;
+    height: 200px;
+    font-size: 18pt;
+    float: left;
+}
+
+#footer .ff .f01 .l_foot li {
+    padding: 10px 0;
+}
+
+
+#footer .ff .f01 .r_foot {
+    width: 470px;
+    height: 200px;
+    float: left;
+
+}
+
+
+#footer .ff .f01 .r_foot li {
+    padding: 10px 0;
+}
+
+#footer .ff .f01 .r_foot li h4 {
+    padding-bottom: 15px;
+}
+
+#footer .ff .f01 .r_foot li>p {
+    font-size: 10pt;
+    color: rgb(228, 228, 228);
+}
+
+
+/* -----------------f02----------------------- */
+
+#footer .ff .f02 .bottom_list::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#footer .ff .f02 {
+    position: relative;
+    z-index: 1;
+}
+
+#footer .ff .f02 .bottom_list {
+    width: 1350px;
+    height: 20px;
+    margin: 20px auto;
+
+
+}
+
+
+
+#footer .ff .f02 .bottom_list li:nth-child(2) {
+    color: rgb(255, 196, 0);
+}
+
+#footer .ff .f02 .bottom_list li {
+    float: left;
+    padding-right: 20px;
+    font-size: 11pt;
+}
+
+
+#footer .ff .f02 .adress {
+    width: 1350px;
+    height: 90px;
+    margin: 0 auto;
+    font-size: 10pt;
+
+
+}
+
+#footer .ff .f02 .adress p {
+    padding-bottom: 10px;
+    color: gray;
+
+}
+
+#footer .ff .f02 .icons {
+    width: 130px;
+    height: 45px;
+    color: gray;
+    overflow: hidden;
+    position: absolute;
+    right: 270px;
+    bottom: 0px;
+    z-index: 2;
+
+}
+
+#footer .ff .f02 span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    font-size: 10pt;
+    border: 1px solid gray;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+
+    margin-right: 10px;
+}
+
+
+
+
+/* ====연습====== */
+
+#section ul.shop_con {
+    width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    /* background-color: rgb(255, 242, 226); */
+
+
+}
+
+#section .shop_con::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+#section ul.shop_con li {
+    float: left;
+    width: 280px;
+    ;
+    height: 350px;
+    border: 3px solid gray;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 60px 10px;
+    transition: all 0.5s;
+}
+
+#section ul.shop_con li:hover {
+    border: 10px solid transparent;
+    background: linear-gradient(white, white),
+        linear-gradient(45deg, rgb(17, 219, 202), rgb(114, 38, 218));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+
+}
